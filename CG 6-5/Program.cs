@@ -25,7 +25,7 @@ namespace CG_6_5
             if (Birthday.Month == 1)
             {
                 if (Birthday.Day <= 19)
-                {
+                { 
                     Console.WriteLine("You are a Capricorn.");
                     Console.Write("You will find true love on Flag Day.");
                     Console.ReadLine();
