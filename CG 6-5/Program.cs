@@ -19,13 +19,13 @@ namespace CG_6_5
             }
 
             Console.WriteLine("Your next birthday will be on a " + Birthday.DayOfWeek + "!");   //output from while loop
-            
+
             //start horoscope date if statements with horoscope and sign to be printed to screen
-            // Some of these dates work and a few don't but i cannot figure out why!
+            // These all work now, but one section of entry prints two different horoscopes
             if (Birthday.Month == 1)
             {
                 if (Birthday.Day <= 19)
-                { 
+                {
                     Console.WriteLine("You are a Capricorn.");
                     Console.Write("You will find true love on Flag Day.");
                     Console.ReadLine();
@@ -82,128 +82,129 @@ namespace CG_6_5
                     Console.ReadLine();
 
                 }
-                else if (Birthday.Month == 5)
+            }
+            else if (Birthday.Month == 5)
+            {
+                if (Birthday.Day <= 20)
                 {
-                    if (Birthday.Day <= 20)
-                    {
-                        Console.WriteLine("You are a Taurus.");
-                        Console.WriteLine("You will enjoy a short sea voyage.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 21)
-                    {
-                        Console.WriteLine("You are a Gemini.");
-                        Console.WriteLine("Your best friend will kill you today.");
-                        Console.ReadLine();
-                    }
+                    Console.WriteLine("You are a Taurus.");
+                    Console.WriteLine("You will enjoy a short sea voyage.");
+                    Console.ReadLine();
                 }
-                else if (Birthday.Month == 6)
+                else if (Birthday.Day >= 21)
                 {
-                    if (Birthday.Day <= 20)
-                    {
-                        Console.WriteLine("You are a Gemini.");
-                        Console.WriteLine("Your best friend will kill you today.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 21)
-                        Console.WriteLine("You are a Cancer.");
-                        Console.WriteLine("Your suspicions are right...Your spouse is cheating on you.");
-                        Console.ReadLine();
+                    Console.WriteLine("You are a Gemini.");
+                    Console.WriteLine("Your best friend will kill you today.");
+                    Console.ReadLine();
                 }
-                else if (Birthday.Month == 7)
+            }
+            else if (Birthday.Month == 6)
+            {
+                if (Birthday.Day <= 20)   //This prints an extra horoscope????
                 {
-                    if (Birthday.Day <= 21)
-                    {
-                        Console.WriteLine("You are a Cancer.");
-                        Console.WriteLine("Your suspicions are right...Your spouse is cheating on you.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 22)
-                    {
-                        Console.WriteLine("You are a Leo.");
-                        Console.WriteLine("Today will be the best day of your life. Tomorrow you will die.");
-                        Console.ReadLine();
-                    }
+                    Console.WriteLine("You are a Gemini.");
+                    Console.WriteLine("Your best friend will kill you today."); 
+                    Console.ReadLine();
                 }
-                else if (Birthday.Month == 8)
+                else if (Birthday.Day >= 21)
+                    Console.WriteLine("You are a Cancer.");
+                    Console.WriteLine("Your suspicions are right...Your spouse is cheating on you.");
+                    Console.ReadLine();
+            }
+            else if (Birthday.Month == 7)
+            {
+                if (Birthday.Day <= 21)
                 {
-                    if (Birthday.Day <= 22)
-                    {
-                        Console.WriteLine("You are a Leo.");
-                        Console.WriteLine("Today will be the best day of your life. Tomorrow you will die.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 23)
-                    {
-                        Console.WriteLine("You are a Virgo.");
-                        Console.WriteLine("Someday you won't be a disappointment. Today is not that day.");
-                        Console.ReadLine();
-                    }
+                    Console.WriteLine("You are a Cancer.");
+                    Console.WriteLine("Your suspicions are right...Your spouse is cheating on you.");
+                    Console.ReadLine();
                 }
-                else if (Birthday.Month == 9)
+                else if (Birthday.Day >= 22)
                 {
-                    if (Birthday.Day <= 22)
-                    {
-                        Console.WriteLine("You are a Virgo.");
-                        Console.WriteLine("Someday you won't be a disappointment. Today is not that day.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 23)
-                    {
-                        Console.WriteLine("You are a Libra.");
-                        Console.WriteLine("Your deeply held religious beliefs are wrong.");
-                        Console.ReadLine();
-                    }
+                    Console.WriteLine("You are a Leo.");
+                    Console.WriteLine("Today will be the best day of your life. Tomorrow you will die.");
+                    Console.ReadLine();
                 }
-                else if (Birthday.Month == 10)
+            }
+            else if (Birthday.Month == 8)
+            {
+                if (Birthday.Day <= 22)
                 {
-                    if (Birthday.Day <= 22)
-                    {
-                        Console.WriteLine("You are a Libra.");
-                        Console.WriteLine("Your deeply held religious beliefs are wrong.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 23)
-                    {
-                        Console.WriteLine("You are a Scorpio.");
-                        Console.WriteLine("You smell funny.");
-                        Console.ReadLine();
-                    }
+                    Console.WriteLine("You are a Leo.");
+                    Console.WriteLine("Today will be the best day of your life. Tomorrow you will die.");
+                    Console.ReadLine();
                 }
-                else if (Birthday.Month == 11)
+                else if (Birthday.Day >= 23)
                 {
-                    if (Birthday.Day <= 21)
-                    {
-                        Console.WriteLine("You are a Scorpio.");
-                        Console.WriteLine("You smell funny.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 22)
-                    {
-                        Console.WriteLine("You are a Sagittarius.");
-                        Console.WriteLine("You are as ugly as you think you are.");
-                        Console.ReadLine();
-                    }
+                    Console.WriteLine("You are a Virgo.");
+                    Console.WriteLine("Someday you won't be a disappointment. Today is not that day.");
+                    Console.ReadLine();
                 }
-                else if (Birthday.Month == 12)
+            }
+            else if (Birthday.Month == 9)
+            {
+                if (Birthday.Day <= 22)
                 {
-                    if (Birthday.Day <= 21)
-                    {
-                        Console.WriteLine("You are a Sagittarius.");
-                        Console.WriteLine("You are as ugly as you think you are.");
-                        Console.ReadLine();
-                    }
-                    else if (Birthday.Day >= 22)
-                    {
-                        Console.WriteLine("You are a Capricorn.");
-                        Console.WriteLine("You will find true love on Flag Day.");
-                        Console.ReadLine();
-                    }
+                    Console.WriteLine("You are a Virgo.");
+                    Console.WriteLine("Someday you won't be a disappointment. Today is not that day.");
+                    Console.ReadLine();
+                }
+                else if (Birthday.Day >= 23)
+                {
+                    Console.WriteLine("You are a Libra.");
+                    Console.WriteLine("Your deeply held religious beliefs are wrong.");
+                    Console.ReadLine();
+                }
+            }
+            else if (Birthday.Month == 10)
+            {
+                if (Birthday.Day <= 22)
+                {
+                    Console.WriteLine("You are a Libra.");
+                    Console.WriteLine("Your deeply held religious beliefs are wrong.");
+                    Console.ReadLine();
+                }
+                else if (Birthday.Day >= 23)
+                {
+                    Console.WriteLine("You are a Scorpio.");
+                    Console.WriteLine("You smell funny.");
+                    Console.ReadLine();
+                }
+            }
+            else if (Birthday.Month == 11)
+            {
+                if (Birthday.Day <= 21)
+                {
+                    Console.WriteLine("You are a Scorpio.");
+                    Console.WriteLine("You smell funny.");
+                    Console.ReadLine();
+                }
+                else if (Birthday.Day >= 22)
+                {
+                    Console.WriteLine("You are a Sagittarius.");
+                    Console.WriteLine("You are as ugly as you think you are.");
+                    Console.ReadLine();
+                }
+            }
+            else if (Birthday.Month == 12)
+            {
+                if (Birthday.Day <= 21)
+                {
+                    Console.WriteLine("You are a Sagittarius.");
+                    Console.WriteLine("You are as ugly as you think you are.");
+                    Console.ReadLine();
+                }
+                else if (Birthday.Day >= 22)
+                {
+                    Console.WriteLine("You are a Capricorn.");
+                    Console.WriteLine("You will find true love on Flag Day.");
+                    Console.ReadLine();
+                }
 
-                }
+            }
                 Console.ReadLine();
 
             }
         }
     } 
-}
+
